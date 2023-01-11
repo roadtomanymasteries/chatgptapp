@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "esbuild lambda.js --bundle --outfile=dist/index.js --platform=node --target=node16"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "openai": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vendia/serverless-express": "^4.10.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.16.16",
+    "nodemon": "^2.0.20"
+  }
+}
